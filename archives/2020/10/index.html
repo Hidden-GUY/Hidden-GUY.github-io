@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hexo</title>
+  <title>Archives: 2020/10 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/archives/2020/10/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -152,371 +152,47 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-ubantu操作基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/05/ubantu%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/">ubantu操作基础</a>
-    </h1>
-  
-
-        
-        <a href="/2020/10/05/ubantu%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/10/05/ubantu%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/" class="archive-article-date">
   	<time datetime="2020-10-05T10:58:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-05</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="基本终端命令"><a href="#基本终端命令" class="headerlink" title="基本终端命令"></a>基本终端命令</h2><h3 id="1、cd"><a href="#1、cd" class="headerlink" title="1、cd"></a>1、cd</h3><p>cd= change directory<br>含义：切换目录</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">cd</span>~：切换到当前用户主目录</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span>.：保持在当前目录不变</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span>..：切换到上级目录</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span>=：可以在最近两次工作目录中来回切换</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="2、ls"><a href="#2、ls" class="headerlink" title="2、ls"></a>2、ls</h3><p>ls= list</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ls -a:显示制定目录下的所有子目录与文件，包括隐藏文件</span><br><span class="line"></span><br><span class="line">ls -l:以列表的方式显示文件的详细信息</span><br><span class="line"></span><br><span class="line">ls -h:配合“-l”以人性化的方式显示文件大小</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* :代表任意个数个字符</span><br><span class="line">ps: ls 1*1</span><br><span class="line">(用于精确查找文件)</span><br><span class="line"></span><br><span class="line">? :代表任意一个字符，至少一个</span><br><span class="line"></span><br><span class="line">[]:表示可以匹配字符组中的任意一个</span><br><span class="line"></span><br><span class="line">[abc]:匹配a、b、c中的任意一个</span><br><span class="line"></span><br><span class="line">[a-f]:匹配a到f范围内的任意一个字符</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-<hr>
-<h3 id="3、pwd"><a href="#3、pwd" class="headerlink" title="3、pwd"></a>3、pwd</h3><p>pwd= print work directory<br>含义：查看当前所在文件夹</p>
-<h3 id="4、touch-文件名"><a href="#4、touch-文件名" class="headerlink" title="4、touch[文件名]"></a>4、touch[文件名]</h3><p>含义：如果文件不存在，新建文件；<br>      如果文件存在，更改文件最后修改时间</p>
-<h3 id="5、mkdir-目录名"><a href="#5、mkdir-目录名" class="headerlink" title="5、mkdir[目录名]"></a>5、mkdir[目录名]</h3><p>mkdir= make directory</p>
-<p>含义：创建目录</p>
-<h3 id="6、rm-文件名"><a href="#6、rm-文件名" class="headerlink" title="6、rm[文件名]"></a>6、rm[文件名]</h3><p>rm =remove</p>
-<p>含义：删除指定文件名的文件</p>
-<h3 id="7、clear"><a href="#7、clear" class="headerlink" title="7、clear"></a>7、clear</h3><p>含义：清屏</p>
-<hr>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/10/05/ubantu%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-机器学习算法1：线性回归" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/29/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%951%EF%BC%9A%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/">机器学习算法1：线性回归</a>
+      <a class="archive-article-title" href="/2020/10/05/ubantu%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/">ubantu操作基础</a>
     </h1>
   
 
-        
-        <a href="/2020/09/29/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%951%EF%BC%9A%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/" class="archive-article-date">
-  	<time datetime="2020-09-29T11:26:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一、线性回归"><a href="#一、线性回归" class="headerlink" title="一、线性回归"></a>一、线性回归</h2><hr>
-<h4 id="1、scikit-learn实现普通线性回归"><a href="#1、scikit-learn实现普通线性回归" class="headerlink" title="1、scikit-learn实现普通线性回归"></a>1、scikit-learn实现普通线性回归</h4><p>(Scikit-learn是一个用于Python编程语言的免费软件机器学习库。 它具有各种分类，回归和聚类算法，包括支持向量机，随机森林，梯度增强，k-means和DBSCAN，旨在与Python数值和科学库NumPy和SciPy互操作。)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class sklearn.linear_model.LinearRegression(fit_intercept=True,normalize=False,n_jobs=1)</span><br></pre></td></tr></table></figure>
+        <div class="article-info info-on-right">
+          
+          
 
-<p>参数：<br>    fit_intercept:选择是否计算偏置常数b,默认是True,表示计算<br>    normalize:选择拟合数据前是否对其进行归一化，默认是False,表示不进行归一化<br>    n_jobs:指定计算机并行工作时的CPU核数，默认是1。<br>           如果是-1，表示使用所有可用的CPU核</p>
-<p>属性：<br>    coef_:用于输出线性回归模型的权重向量w<br>    intercept_:用于输出线性回归模型的权重向量b</p>
-<p>方法：<br>    fit(X_train,Y_train):在训练集(X_train,Y_train)上训练模型<br>    score(X_test,Y_test):返回模型在测试集(X_test,Y_test)上的猜测准确率<br>    计算公式为：</p>
-<pre><code></code></pre>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/09/29/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%951%EF%BC%9A%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-Hexo-博客操作指南" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/14/Hexo-%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">Hexo 博客操作指南</a>
-    </h1>
-  
-
-        
-        <a href="/2020/09/14/Hexo-%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/" class="archive-article-date">
-  	<time datetime="2020-09-14T13:54:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="基本Hexo操作"><a href="#基本Hexo操作" class="headerlink" title="基本Hexo操作"></a>基本Hexo操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="built_in">help</span> <span class="comment">#查看帮助</span></span><br><span class="line">$ hexo version <span class="comment">#查看hexo版本</span></span><br><span class="line">$ hexo alogolia <span class="comment">#更新search库</span></span><br><span class="line">$ hexo n <span class="string">&quot;name&quot;</span> <span class="comment">#新建文章（name）</span></span><br><span class="line">$ hexo new posts <span class="string">&quot;name&quot;</span> <span class="comment">#生成新文章：\source\_posts\title.md</span></span><br><span class="line">$ hexo new pages <span class="string">&quot;name&quot;</span> <span class="comment">#新建页面</span></span><br><span class="line">$ hexo clean <span class="comment">#清除部署缓存</span></span><br><span class="line">$ hexo g == hexo generate <span class="comment">#生成静态页面至public目录</span></span><br><span class="line">$ hexo s == hexo server <span class="comment">#开启预览访问端口</span></span><br><span class="line"><span class="comment">#（这时会给你一个生成的hexo网站）</span></span><br><span class="line">$ hexo d == hexo deploy <span class="comment">#将.deploy目录部署到github</span></span><br><span class="line">$ hexo d -g <span class="comment">#生成+部署</span></span><br><span class="line">$ hexo s -g <span class="comment">#生成+预览</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h2><h3 id="1、添加标题用”-”"><a href="#1、添加标题用”-”" class="headerlink" title="1、添加标题用”#”"></a>1、添加标题用”#”</h3><p>用的#越多，标题字号越小</p>
-<p>ex.<br>“##基本hexo操作”显示为正文<br>要在#后面加上空格<br>即</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="comment">## 基本hexo操作</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2、显示代码框框方法"><a href="#2、显示代码框框方法" class="headerlink" title="2、显示代码框框方法"></a>2、显示代码框框方法</h3><p>“ <code>bash &#39;内容&#39;</code><br>“</p>
-<p>表示为</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;内容&#x27;</span></span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/09/14/Hexo-%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="n-我的第一篇博客文章" class="article article-type-n  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
-  
-
-        
-        <a href="/2020/09/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-09-10T11:59:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n <span class="string">&quot;鬼故事开始了&quot;</span></span><br></pre></td></tr></table></figure>
-<hr>
-<p>有一天锦华放了个P</p>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><hr>
-<p>然后他没了</p>
-<hr>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/09/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2020/09/09/hello-world/" class="archive-article-date">
-  	<time datetime="2020-09-09T15:57:18.769Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/09/09/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -538,9 +214,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
